@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Greeting Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Your Valentine's Greeting</h1>
+        <form id="greeting-form">
+            <label for="from-name">From:</label>
+            <input type="text" id="from-name" required>
+
+            <label for="to-name">To:</label>
+            <input type="text" id="to-name" required>
+
+            <label for="message">Personal Message:</label>
+            <textarea id="message" rows="4" required></textarea>
+
+            <label for="background">Choose Background:</label>
+            <select id="background">
+                <option value="bg1.jpg">Romantic Roses</option>
+                <option value="bg2.jpg">Hearts in Sky</option>
+                <option value="upload">Upload Your Own Photo</option>
+            </select>
+
+            <input type="file" id="photo-upload" accept="image/*" style="display: none;">
+
+            <button type="submit">Generate Greeting</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
